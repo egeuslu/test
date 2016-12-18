@@ -14,8 +14,10 @@ namespace dowhilegithubtest
             int sonuc = 0;
             do
             {
-                a++;
-                sonuc += a;
+               
+              a++;
+              sonuc += a;
+
             } while ( a < 10 );
 
             Console.WriteLine(sonuc);

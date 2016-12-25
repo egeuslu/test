@@ -33,13 +33,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.AdSoyadTxt = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.EvRBtn = new System.Windows.Forms.RadioButton();
             this.KurumRBtn = new System.Windows.Forms.RadioButton();
+            this.EvRBtn = new System.Windows.Forms.RadioButton();
             this.BSayacTxt = new System.Windows.Forms.TextBox();
             this.ASayacTxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.EkleBtn = new System.Windows.Forms.Button();
+            this.AboneLbx = new System.Windows.Forms.ListBox();
+            this.OdenenlerLbx = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,11 +58,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(220, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 18);
+            this.label1.Size = new System.Drawing.Size(74, 18);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Abone No";
+            this.label1.Text = "Aboneler";
             // 
             // label2
             // 
@@ -89,17 +93,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ev / Kurum";
             // 
-            // EvRBtn
-            // 
-            this.EvRBtn.AutoSize = true;
-            this.EvRBtn.Location = new System.Drawing.Point(6, 19);
-            this.EvRBtn.Name = "EvRBtn";
-            this.EvRBtn.Size = new System.Drawing.Size(38, 17);
-            this.EvRBtn.TabIndex = 0;
-            this.EvRBtn.TabStop = true;
-            this.EvRBtn.Text = "Ev";
-            this.EvRBtn.UseVisualStyleBackColor = true;
-            // 
             // KurumRBtn
             // 
             this.KurumRBtn.AutoSize = true;
@@ -110,6 +103,17 @@
             this.KurumRBtn.TabStop = true;
             this.KurumRBtn.Text = "Kurum";
             this.KurumRBtn.UseVisualStyleBackColor = true;
+            // 
+            // EvRBtn
+            // 
+            this.EvRBtn.AutoSize = true;
+            this.EvRBtn.Location = new System.Drawing.Point(6, 19);
+            this.EvRBtn.Name = "EvRBtn";
+            this.EvRBtn.Size = new System.Drawing.Size(38, 17);
+            this.EvRBtn.TabIndex = 0;
+            this.EvRBtn.TabStop = true;
+            this.EvRBtn.Text = "Ev";
+            this.EvRBtn.UseVisualStyleBackColor = true;
             // 
             // BSayacTxt
             // 
@@ -154,12 +158,53 @@
             this.EkleBtn.TabIndex = 9;
             this.EkleBtn.Text = "EKLE";
             this.EkleBtn.UseVisualStyleBackColor = true;
+            this.EkleBtn.Click += new System.EventHandler(this.EkleBtn_Click);
+            // 
+            // AboneLbx
+            // 
+            this.AboneLbx.FormattingEnabled = true;
+            this.AboneLbx.Location = new System.Drawing.Point(223, 39);
+            this.AboneLbx.Name = "AboneLbx";
+            this.AboneLbx.Size = new System.Drawing.Size(273, 342);
+            this.AboneLbx.TabIndex = 10;
+            // 
+            // OdenenlerLbx
+            // 
+            this.OdenenlerLbx.FormattingEnabled = true;
+            this.OdenenlerLbx.Location = new System.Drawing.Point(585, 39);
+            this.OdenenlerLbx.Name = "OdenenlerLbx";
+            this.OdenenlerLbx.Size = new System.Drawing.Size(279, 342);
+            this.OdenenlerLbx.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(582, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 18);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Ödenenler";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(14, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 18);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Abone No";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 624);
+            this.ClientSize = new System.Drawing.Size(889, 430);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.OdenenlerLbx);
+            this.Controls.Add(this.AboneLbx);
             this.Controls.Add(this.EkleBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -172,6 +217,7 @@
             this.Controls.Add(this.AboneNoTxt);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -193,6 +239,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button EkleBtn;
+        private System.Windows.Forms.ListBox AboneLbx;
+        private System.Windows.Forms.ListBox OdenenlerLbx;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 

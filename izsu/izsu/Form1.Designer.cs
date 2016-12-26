@@ -44,6 +44,7 @@
             this.OdenenlerLbx = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.OdemeBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,15 +166,16 @@
             this.AboneLbx.FormattingEnabled = true;
             this.AboneLbx.Location = new System.Drawing.Point(223, 39);
             this.AboneLbx.Name = "AboneLbx";
-            this.AboneLbx.Size = new System.Drawing.Size(273, 342);
+            this.AboneLbx.Size = new System.Drawing.Size(273, 420);
             this.AboneLbx.TabIndex = 10;
+            this.AboneLbx.DoubleClick += new System.EventHandler(this.AboneLbx_DoubleClick);
             // 
             // OdenenlerLbx
             // 
             this.OdenenlerLbx.FormattingEnabled = true;
             this.OdenenlerLbx.Location = new System.Drawing.Point(585, 39);
             this.OdenenlerLbx.Name = "OdenenlerLbx";
-            this.OdenenlerLbx.Size = new System.Drawing.Size(279, 342);
+            this.OdenenlerLbx.Size = new System.Drawing.Size(279, 420);
             this.OdenenlerLbx.TabIndex = 11;
             // 
             // label5
@@ -196,11 +198,23 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Abone No";
             // 
+            // OdemeBtn
+            // 
+            this.OdemeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OdemeBtn.Location = new System.Drawing.Point(18, 409);
+            this.OdemeBtn.Name = "OdemeBtn";
+            this.OdemeBtn.Size = new System.Drawing.Size(199, 47);
+            this.OdemeBtn.TabIndex = 14;
+            this.OdemeBtn.Text = "ÖDEME YAP";
+            this.OdemeBtn.UseVisualStyleBackColor = true;
+            this.OdemeBtn.Click += new System.EventHandler(this.OdemeBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(889, 430);
+            this.ClientSize = new System.Drawing.Size(993, 554);
+            this.Controls.Add(this.OdemeBtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.OdenenlerLbx);
@@ -243,6 +257,7 @@
         private System.Windows.Forms.ListBox OdenenlerLbx;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button OdemeBtn;
     }
 }
 

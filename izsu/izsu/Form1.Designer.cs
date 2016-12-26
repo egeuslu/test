@@ -168,7 +168,8 @@
             this.AboneLbx.Name = "AboneLbx";
             this.AboneLbx.Size = new System.Drawing.Size(273, 420);
             this.AboneLbx.TabIndex = 10;
-            this.AboneLbx.DoubleClick += new System.EventHandler(this.AboneLbx_DoubleClick);
+            //this.AboneLbx.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AboneLbx_MouseClick);
+            //this.AboneLbx.DoubleClick += new System.EventHandler(this.AboneLbx_DoubleClick);
             // 
             // OdenenlerLbx
             // 
@@ -213,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 554);
+            this.ClientSize = new System.Drawing.Size(917, 515);
             this.Controls.Add(this.OdemeBtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

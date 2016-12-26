@@ -152,13 +152,14 @@
             // 
             // EkleBtn
             // 
+            this.EkleBtn.BackColor = System.Drawing.Color.DarkRed;
             this.EkleBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.EkleBtn.Location = new System.Drawing.Point(17, 335);
             this.EkleBtn.Name = "EkleBtn";
             this.EkleBtn.Size = new System.Drawing.Size(200, 46);
             this.EkleBtn.TabIndex = 9;
             this.EkleBtn.Text = "EKLE";
-            this.EkleBtn.UseVisualStyleBackColor = true;
+            this.EkleBtn.UseVisualStyleBackColor = false;
             this.EkleBtn.Click += new System.EventHandler(this.EkleBtn_Click);
             // 
             // AboneLbx
@@ -168,13 +169,11 @@
             this.AboneLbx.Name = "AboneLbx";
             this.AboneLbx.Size = new System.Drawing.Size(273, 420);
             this.AboneLbx.TabIndex = 10;
-            //this.AboneLbx.MouseClick += new System.Windows.Forms.MouseEventHandler(this.AboneLbx_MouseClick);
-            //this.AboneLbx.DoubleClick += new System.EventHandler(this.AboneLbx_DoubleClick);
             // 
             // OdenenlerLbx
             // 
             this.OdenenlerLbx.FormattingEnabled = true;
-            this.OdenenlerLbx.Location = new System.Drawing.Point(585, 39);
+            this.OdenenlerLbx.Location = new System.Drawing.Point(563, 39);
             this.OdenenlerLbx.Name = "OdenenlerLbx";
             this.OdenenlerLbx.Size = new System.Drawing.Size(279, 420);
             this.OdenenlerLbx.TabIndex = 11;
@@ -183,7 +182,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(582, 9);
+            this.label5.Location = new System.Drawing.Point(569, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 18);
             this.label5.TabIndex = 12;
@@ -201,20 +200,22 @@
             // 
             // OdemeBtn
             // 
+            this.OdemeBtn.BackColor = System.Drawing.Color.OliveDrab;
             this.OdemeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OdemeBtn.Location = new System.Drawing.Point(18, 409);
             this.OdemeBtn.Name = "OdemeBtn";
             this.OdemeBtn.Size = new System.Drawing.Size(199, 47);
             this.OdemeBtn.TabIndex = 14;
             this.OdemeBtn.Text = "ÖDEME YAP";
-            this.OdemeBtn.UseVisualStyleBackColor = true;
+            this.OdemeBtn.UseVisualStyleBackColor = false;
             this.OdemeBtn.Click += new System.EventHandler(this.OdemeBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(917, 515);
+            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.ClientSize = new System.Drawing.Size(873, 498);
             this.Controls.Add(this.OdemeBtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -231,7 +232,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AboneNoTxt);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "İzsu Borç Ödeme";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

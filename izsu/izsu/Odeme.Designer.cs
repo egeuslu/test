@@ -104,10 +104,10 @@
             // 
             // adsoyadtextbox
             // 
-            this.adsoyadtextbox.Location = new System.Drawing.Point(101, 51);
+            this.adsoyadtextbox.Location = new System.Drawing.Point(129, 51);
             this.adsoyadtextbox.Name = "adsoyadtextbox";
             this.adsoyadtextbox.ReadOnly = true;
-            this.adsoyadtextbox.Size = new System.Drawing.Size(224, 20);
+            this.adsoyadtextbox.Size = new System.Drawing.Size(196, 20);
             this.adsoyadtextbox.TabIndex = 6;
             // 
             // oncekisayactextbox
@@ -159,10 +159,10 @@
             // 
             // evkurumtextbox
             // 
-            this.evkurumtextbox.Location = new System.Drawing.Point(101, 91);
+            this.evkurumtextbox.Location = new System.Drawing.Point(129, 91);
             this.evkurumtextbox.Name = "evkurumtextbox";
             this.evkurumtextbox.ReadOnly = true;
-            this.evkurumtextbox.Size = new System.Drawing.Size(224, 20);
+            this.evkurumtextbox.Size = new System.Drawing.Size(196, 20);
             this.evkurumtextbox.TabIndex = 12;
             // 
             // Form2
@@ -170,7 +170,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(367, 364);
+            this.ClientSize = new System.Drawing.Size(351, 368);
             this.Controls.Add(this.evkurumtextbox);
             this.Controls.Add(this.evkurunlbl);
             this.Controls.Add(this.ödemeyapBtn);

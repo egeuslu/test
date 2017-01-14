@@ -10,8 +10,8 @@ namespace izsu
     {
         public string adi;
         public int AboneNo;
-        public int BSayaci;
-        public int ASayaci;
+        public double BSayaci;
+        public double ASayaci;
         public string EvKurum;
 
         public override string ToString()
